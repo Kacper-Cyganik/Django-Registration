@@ -4,6 +4,9 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+
+
 def registration(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
